@@ -1,5 +1,8 @@
 import Image from "next/image";
+import { Rufina } from "next/font/google";
 import projects from "./../data/data";
+
+const rufina = Rufina({ subsets: ["latin"], weight: ["400", "700"] });
 
 function Projects() {
   return (
@@ -10,10 +13,14 @@ function Projects() {
           className="flex mt-24 mb-2 justify-center items-center flex-col"
           id={`${item.title}`}
         >
-          <h1 className="text-[30px] md:text-[35px] lg:text-[30px] font-bold flex justify-center items-center text-theme-gray">
+          <h1
+            className={`text-[30px] md:text-[35px] lg:text-[30px] font-bold flex justify-center items-center text-theme-gray ${rufina.className}`}
+          >
             {item.title}
           </h1>
-          <h3 className="w-[330px] md:w-[480px]  lg:w-[414px] mt-2 font-bold text-[20px] md:text-[25px] lg:text-[20px]  flex justify-center items-center text-theme-red text-center">
+          <h3
+            className={`w-[330px] md:w-[480px]  lg:w-[414px] mt-2 font-bold text-[20px] md:text-[25px] lg:text-[20px]  flex justify-center items-center text-theme-red text-center ${rufina.className}`}
+          >
             {item.description}
           </h3>
           {item.type === "phone" ? (
@@ -33,7 +40,9 @@ function Projects() {
             </div>
           )}
           <a href={item.link} targer="_blank">
-            <p className="mt-10 text-md md:text-lg lg:text-md italic text-theme-red underline">
+            <p
+              className={`mt-10 text-md md:text-lg lg:text-md italic text-theme-red underline ${rufina.className}`}
+            >
               View figma design &#8594;
             </p>
           </a>

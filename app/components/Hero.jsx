@@ -1,19 +1,28 @@
 import Image from "next/image";
 import profilePic from "@/public/images/profile-pic.png";
 import nameCircle from "@/public/images/name-circle.png";
+import { Rufina } from "next/font/google";
+
+const rufina = Rufina({ subsets: ["latin"], weight: ["400", "700"] });
 
 function Hero() {
   return (
     <div className="h-[87vh] xs:h-screen lg:h-[93vh] flex flex-col justify-center items-center bg-theme-bg gap-3 xs:gap-16 lg:gap-12">
       <div className="flex flex-col items-center">
-        <p className="flex justify-center items-center text-theme-red font-bold text-[20px] md:text-[32px] lg:text-[24px] text-center">
+        <p
+          className={`flex justify-center items-center text-theme-red font-bold text-[20px] md:text-[32px] lg:text-[24px] text-center ${rufina.className}`}
+        >
           I&apos;m Attique Jutt, a UI/UX designer
         </p>
-        <p className="w-[350px] xs:w-[368px] my-1 md:w-[650px] lg:w-[554px]  leading-tight flex justify-center items-center text-theme-gray font-bold text-[26px] md:text-[40px] lg:text-[40px] text-center">
+        <p
+          className={`w-[350px] xs:w-[368px] my-1 md:w-[650px] lg:w-[554px]  leading-tight flex justify-center items-center text-theme-gray font-bold text-[26px] md:text-[40px] lg:text-[40px] text-center ${rufina.className}`}
+        >
           An passionate designer eager to design your thoughts into pixel
           perfect reality.
         </p>
-        <p className="w-[335px]  lg:w-[398px]  flex justify-center items-center text-theme-red font-bold text-[20px] md:text-[32px] lg:text-[24px] text-center">
+        <p
+          className={`w-[335px]  lg:w-[398px]  flex justify-center items-center text-theme-red font-bold text-[20px] md:text-[32px] lg:text-[24px] text-center ${rufina.className}`}
+        >
           You desire, I design
         </p>
       </div>
@@ -49,10 +58,14 @@ function Hero() {
           </div>
         </div>
         <div className="flex flex-col">
-          <h2 className="w-auto text-[22px] xs:text-[32px] md:text-[40px] lg:text-[32px] text-center font-bold text-theme-red pb-1 border-b-2 border-theme-red">
+          <h2
+            className={`w-auto text-[22px] xs:text-[32px] md:text-[40px] lg:text-[32px] text-center font-bold text-theme-red pb-1 border-b-2 border-theme-red ${rufina.className}`}
+          >
             Recent Work
           </h2>
-          <ul className="flex flex-col text-center gap-1 xs:gap-3 lg:gap-1 pt-4 lg:pt-2 text-[20px] xs:text-[24px] md:text-[35px] lg:text-[24px] font-bold text-theme-gray">
+          <ul
+            className={`flex flex-col text-center gap-1 xs:gap-3 lg:gap-1 pt-4 lg:pt-2 text-[20px] xs:text-[24px] md:text-[35px] lg:text-[24px] font-bold text-theme-gray ${rufina.className}`}
+          >
             <a href="#Food App Tutorial" className="cursor-pointer">
               <li>Food App Tutorial</li>
             </a>
