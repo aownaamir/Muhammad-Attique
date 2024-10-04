@@ -7,7 +7,7 @@ import projects from "./../data/data";
 
 function Projects() {
   return (
-    <div className="pt-10 px-4 pb-7 bg-theme-bg flex justify-center items-center flex-col">
+    <div className="pt-10 px-4 bg-theme-bg flex justify-center items-center flex-col">
       {projects.map((item) => (
         <div
           key={item.id}
@@ -16,11 +16,11 @@ function Projects() {
           <h1 className="text-[30px] font-bold flex justify-center items-center text-theme-gray">
             {item.title}
           </h1>
-          <h3 className="lg:w-[414px] font-bold mb-9 text-[20px] flex justify-center items-center text-theme-red text-center">
+          <h3 className="w-[330px] md:w-[480px]  lg:w-[414px] mt-2 font-bold text-[20px] flex justify-center items-center text-theme-red text-center">
             {item.description}
           </h3>
           {item.type === "phone" ? (
-            <div className="w-[290px] lg:w-[870px]  flex whitespace-nowrap justify-center items-center gap-5 lg:gap-10 overflow-x-scroll overflow-y-hidden custom-scrollbar">
+            <div className="w-[290px] lg:w-[870px] mt-6 lg:mt-8  flex whitespace-nowrap justify-center items-center gap-5 lg:gap-10 overflow-x-scroll overflow-y-hidden custom-scrollbar">
               {item.images.map((item) => (
                 <div
                   key={Math.random()}
