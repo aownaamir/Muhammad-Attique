@@ -17,7 +17,7 @@ function Projects() {
             {item.description}
           </h3>
           {item.type === "phone" ? (
-            <div className="w-[240px] xs:w-[310px] md:w-[293px]   lg:w-[890px]py-5 mt-6 lg:mt-8 flex whitespace-nowrap justify-center items-center gap-5 lg:gap-10 overflow-x-scroll overflow-y-hidden custom-scrollbar">
+            <div className="w-[240px] xs:w-[310px] md:w-[293px] lg:w-[890px] py-5 mt-6 lg:mt-8 flex whitespace-nowrap justify-center items-center gap-5 lg:gap-10 overflow-x-scroll overflow-y-hidden custom-scrollbar">
               {item.images.map((item, i) => (
                 <div
                   key={Math.random()}
