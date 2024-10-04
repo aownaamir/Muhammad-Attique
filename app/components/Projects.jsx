@@ -11,7 +11,7 @@ function Projects() {
       {projects.map((item) => (
         <div
           key={item.id}
-          className="flex my-2 justify-center items-center flex-col"
+          className="flex mt-24 mb-2 justify-center items-center flex-col"
         >
           <h1 className="text-[30px] font-bold flex justify-center items-center text-theme-gray">
             {item.title}
@@ -19,7 +19,7 @@ function Projects() {
           <h3 className="w-[414px] text-[20px] flex justify-center items-center text-theme-red text-center">
             {item.description}
           </h3>
-          <div className="w-[290px] lg:w-[870px]  flex whitespace-nowrap mt-9 justify-center items-center gap-5 lg:gap-10 overflow-x-scroll">
+          <div className="w-[290px] lg:w-[870px]  flex whitespace-nowrap mt-9 justify-center items-center gap-5 lg:gap-10 overflow-x-scroll overflow-y-hidden custom-scrollbar">
             {item.images.map((item) => (
               <div
                 key={Math.random()}
