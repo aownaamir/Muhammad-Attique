@@ -7,16 +7,16 @@ import projects from "./../data/data";
 
 function Projects() {
   return (
-    <div className="pt-10 px-4 bg-theme-bg flex justify-center items-center flex-col">
+    <div className="pt-10 px-4 md:pb-5 lg:pb-1 bg-theme-bg flex justify-center items-center flex-col">
       {projects.map((item) => (
         <div
           key={item.id}
           className="flex mt-24 mb-2 justify-center items-center flex-col"
         >
-          <h1 className="text-[30px] font-bold flex justify-center items-center text-theme-gray">
+          <h1 className="text-[30px] md:text-[35px] lg:text-[30px] font-bold flex justify-center items-center text-theme-gray">
             {item.title}
           </h1>
-          <h3 className="w-[330px] md:w-[480px]  lg:w-[414px] mt-2 font-bold text-[20px] flex justify-center items-center text-theme-red text-center">
+          <h3 className="w-[330px] md:w-[480px]  lg:w-[414px] mt-2 font-bold text-[20px] md:text-[25px] lg:text-[20px]  flex justify-center items-center text-theme-red text-center">
             {item.description}
           </h3>
           {item.type === "phone" ? (
@@ -36,7 +36,7 @@ function Projects() {
             </div>
           )}
           <a href={item.link} targer="_blank">
-            <p className="mt-10 text-md italic text-theme-red underline">
+            <p className="mt-10 text-md md:text-lg lg:text-md italic text-theme-red underline">
               View figma design &#8594;
             </p>
           </a>
