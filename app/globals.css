@@ -5,3 +5,16 @@
 .custom-scrollbar::-webkit-scrollbar {
   @apply h-0 w-0 rounded-full/* Width of the scrollbar */;
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-custom {
+  animation: spin 20s linear infinite; /* 2 seconds for one full rotation */
+}

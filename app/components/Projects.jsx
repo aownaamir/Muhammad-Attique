@@ -7,7 +7,7 @@ import projects from "./../data/data";
 
 function Projects() {
   return (
-    <div className="pt-[170px] px-4 pb-7 bg-theme-bg flex justify-center items-center flex-col">
+    <div className="pt-10 px-4 pb-7 bg-theme-bg flex justify-center items-center flex-col">
       {projects.map((item) => (
         <div
           key={item.id}
@@ -35,6 +35,11 @@ function Projects() {
               <Image src={item.images} alt="desktop" className="lg:w-[550px]" />
             </div>
           )}
+          <a href={item.link} targer="_blank">
+            <p className="mt-10 text-md italic text-theme-red underline">
+              View figma design &#8594;
+            </p>
+          </a>
         </div>
       ))}
     </div>

@@ -15,6 +15,7 @@ const pojects = [
     type: "phone",
     description: "My first project as a tutorial experience",
     images: [fa1, fa2, fa3, fa4],
+    link: "https://www.figma.com/design/BkZwFyF0SVOR3ewjeKsWQL/Tutorial-2.0?node-id=1-6&t=fjvGKIvVvy3FXZKR-1",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const pojects = [
     description:
       "UI/UX for finding, ordering of your favorite food from your favorite restaurant",
     images: [hf1, hf2, hf3, hf4],
+    link: "https://www.figma.com/design/HphfefNIqxOqFo2ctdBNa0?node-id=0-1",
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const pojects = [
     type: "desktop",
     description: "UI/UX design for a women and Kids shopping brand",
     images: ec,
+    link: "https://www.figma.com/design/kzYFLnsYyJ4bQITvAyi9Tl/Ethnc-Branding?node-id=0-1&node-type=canvas&t=5Rqk6UxeZEBa7Bzv-0",
   },
 ];
 
