@@ -25,12 +25,19 @@ function Projects() {
           </h3>
           {item.type === "phone" ? (
             <div className="w-[240px] xs:w-[310px] md:w-[293px] lg:w-[890px] py-5 mt-6 lg:mt-8 flex whitespace-nowrap justify-center items-center gap-5 lg:gap-10 overflow-x-scroll overflow-y-hidden custom-scrollbar">
-              {item.images.map((item, i) => (
+              {item.images.map((imageItem, i) => (
                 <div
                   key={Math.random()}
                   className={`w-[220px] h-[490px] xs:w-[275px] xs:h-[609px] lg:w-[185px] lg:h-[391px] custom-shadow border-4 border-black rounded-3xl flex flex-none justify-center items-center overflow-hidden translate-x-[360px] xs:translate-x-[442px] md:translate-x-[442px] lg:translate-x-0 `}
                 >
-                  <Image src={item} alt={`${item}`} className="w-full h-full" />
+                  <Image
+                    src={imageItem}
+                    alt={`${imageItem}`}
+                    className={`w-full h-full ${
+                      item.title.startsWith("Hilal") &&
+                      "scale-[1.033] md:scale-[1.041] lf:scale-[1.033]"
+                    }`}
+                  />
                 </div>
               ))}
             </div>
