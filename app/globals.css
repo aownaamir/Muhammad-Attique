@@ -16,5 +16,9 @@
 }
 
 .rotate-custom {
-  animation: spin 20s linear infinite; /* 2 seconds for one full rotation */
+  animation: spin 50s linear infinite; /* 2 seconds for one full rotation */
+}
+
+.custom-shadow {
+  box-shadow: 3px 3px 4px 0px gray;
 }

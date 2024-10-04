@@ -28,7 +28,7 @@ const pojects = [
   },
   {
     id: 3,
-    title: "Ethnc Clothing",
+    title: "ETHNC Clothing",
     type: "desktop",
     description: "UI/UX design for a women and Kids shopping brand",
     images: ec,

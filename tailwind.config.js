@@ -14,6 +14,9 @@ module.exports = {
         "theme-red": "rgba(184, 80, 66, 1)",
         "theme-bg": "rgba(231, 232, 209, 1)",
       },
+      screens: {
+        xs: "400px",
+      },
     },
   },
   plugins: [],

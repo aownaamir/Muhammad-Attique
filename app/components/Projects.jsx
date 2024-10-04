@@ -1,7 +1,3 @@
-import fa1 from "@/public/images/FoodApp1.jpeg";
-import fa2 from "@/public/images/FoodApp2.jpeg";
-import fa3 from "@/public/images/FoodApp3.jpeg";
-import fa4 from "@/public/images/FoodApp4.jpeg";
 import Image from "next/image";
 import projects from "./../data/data";
 
@@ -12,6 +8,7 @@ function Projects() {
         <div
           key={item.id}
           className="flex mt-24 mb-2 justify-center items-center flex-col"
+          id={`${item.title}`}
         >
           <h1 className="text-[30px] md:text-[35px] lg:text-[30px] font-bold flex justify-center items-center text-theme-gray">
             {item.title}
@@ -20,11 +17,11 @@ function Projects() {
             {item.description}
           </h3>
           {item.type === "phone" ? (
-            <div className="w-[290px] lg:w-[870px] mt-6 lg:mt-8  flex whitespace-nowrap justify-center items-center gap-5 lg:gap-10 overflow-x-scroll overflow-y-hidden custom-scrollbar">
+            <div className="w-[310px] lg:w-[890px] py-5 mt-6 lg:mt-8 flex whitespace-nowrap justify-center items-center gap-5 lg:gap-10 overflow-x-scroll overflow-y-hidden custom-scrollbar">
               {item.images.map((item) => (
                 <div
                   key={Math.random()}
-                  className="w-[275px] h-[609px] lg:w-[185px] lg:h-[391px] border-4 border-black rounded-3xl flex flex-none justify-center items-center overflow-hidden translate-x-[442.8px] lg:translate-x-0"
+                  className="w-[275px] h-[609px] lg:w-[185px] lg:h-[391px] custom-shadow border-4 border-black rounded-3xl flex flex-none justify-center items-center overflow-hidden translate-x-[442.8px] lg:translate-x-0"
                 >
                   <Image src={item} alt={`${item}`} className="w-full h-full" />
                 </div>
