@@ -4,7 +4,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { BiLogoGmail } from "react-icons/bi";
 function Footer() {
   return (
-    <div className="pb-3 w-full bg-theme-bg flex flex-col justify-center items-center">
+    <div className="pb-3 w-full bg-theme-bg fixed bottom-0 flex flex-col justify-center items-center">
       <div className="w-[94%] mb-2 border-2 border-theme-red"></div>
       <ul className="w-full flex pl-16 lg:pl-20 gap-5 text-xl">
         <li>

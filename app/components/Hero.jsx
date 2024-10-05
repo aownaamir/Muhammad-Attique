@@ -17,8 +17,8 @@ function Hero() {
         <p
           className={`w-[350px] xs:w-[368px] my-1 md:w-[650px] lg:w-[554px]  leading-tight flex justify-center items-center text-theme-gray font-bold text-[26px] md:text-[40px] lg:text-[40px] text-center ${rufina.className}`}
         >
-          An passionate designer eager to design your thoughts into pixel
-          perfect reality.
+          A passionate designer eager to design your thoughts into pixel perfect
+          reality.
         </p>
         <p
           className={`w-[335px]  lg:w-[398px]  flex justify-center items-center text-theme-red font-bold text-[20px] md:text-[32px] lg:text-[24px] text-center ${rufina.className}`}
