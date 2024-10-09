@@ -7,7 +7,7 @@ const rufina = Rufina({ subsets: ["latin"], weight: ["400", "700"] });
 
 function Hero() {
   return (
-    <div className="pt-20 lg:pt-10 flex flex-col justify-center items-center bg-theme-bg gap-3 xs:gap-16 lg:gap-12">
+    <div className="border-2 border-blue-500 pt-20 lg:pt-10 flex flex-col justify-center items-center bg-theme-bg gap-3 xs:gap-16 lg:gap-12">
       {/* <div className="xs:h-[91vh] md:h-[92vh] lg:h-[93vh] flex flex-col justify-center items-center bg-theme-bg gap-3 xs:gap-16 lg:gap-12"> */}
 
       <div className="flex flex-col items-center">

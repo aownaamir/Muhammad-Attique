@@ -6,7 +6,7 @@ const rufina = Rufina({ subsets: ["latin"], weight: ["400", "700"] });
 
 function Projects() {
   return (
-    <div className=" pb-5 px-4 lg:pb-1 bg-theme-bg flex justify-center items-center flex-col">
+    <div className=" border-2 border-pink-500 pb-5 px-4 lg:pb-1 bg-theme-bg flex justify-center items-center flex-col">
       {projects.map((item) => (
         <div
           key={item.id}
