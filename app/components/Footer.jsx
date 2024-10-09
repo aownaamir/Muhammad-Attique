@@ -6,8 +6,9 @@ import { BiLogoGmail } from "react-icons/bi";
 import { useState } from "react";
 
 function Footer() {
-  const handleCopyEmail = () => {
+  const handleCopyEmail = (e) => {
     const email = "attique.officialwork@gmail.com";
+    e.preventDefault();
 
     navigator.clipboard
       .writeText(email)
