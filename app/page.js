@@ -4,10 +4,8 @@ import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col justify-between">
-      <div className="h-full ">
-        <Hero />
-      </div>
+    <div className="">
+      <Hero />
       <Projects />
       <Footer />
     </div>
