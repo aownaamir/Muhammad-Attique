@@ -1,14 +1,29 @@
-import { SiGmail } from "react-icons/si";
+"use client";
+
 import { FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { BiLogoGmail } from "react-icons/bi";
+import { useState } from "react";
+
 function Footer() {
+  const handleCopyEmail = () => {
+    const email = "attique.officialwork@gmail.com";
+
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        alert("Email copied to clipboard!");
+      })
+      .catch((err) => {
+        console.error("Failed to copy email: ", err);
+      });
+  };
   return (
-    <div className="pb-3 w-full bg-theme-bg fixed bottom-0 flex flex-col justify-center items-center">
+    <div className="pb-3 w-full bg-theme-bg sticky bottom-0 flex flex-col justify-center items-center">
       <div className="w-[94%] mb-2 border-2 border-theme-red"></div>
       <ul className="w-full flex pl-16 lg:pl-20 gap-5 text-xl">
-        <li>
-          <a target="_black" href="attique.officialwork@gmail.com">
+        <li onClick={handleCopyEmail}>
+          <a href="">
             <BiLogoGmail />
           </a>
         </li>

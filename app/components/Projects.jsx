@@ -10,7 +10,7 @@ function Projects() {
       {projects.map((item) => (
         <div
           key={item.id}
-          className="flex mt-24 mb-2 justify-center items-center flex-col"
+          className="flex mt-10 mb-2 justify-center items-center flex-col"
           id={`${item.title}`}
         >
           <h1
